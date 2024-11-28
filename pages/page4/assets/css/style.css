@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+.site{
+    display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.Site-content {
+    flex: 1;}
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+a.current{
+  font-size: 18px;
+  color: #000000;
+}
+.nav-item:hover{
+  font-size: 19px;
+}
+.nav-item{
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(0, 136, 255);
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+main{
+    flex-grow: 1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.containerf{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    bottom: 0;
+    left: 0;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: 70px  0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color:#ff0000;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+font-size: 16px;
+margin-left: -30px;
+text-transform: capitalize;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: #ff0000;
+display: block;
+transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255, 0.3);
+    margin: 0 10px 10px 0 ;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(255, 0, 0);
+    transition: 0.5s all ease;
+}
+.footer-col .social-links a:hover{
+color: #24262b;
+background-color: rgb(255, 0, 0);
+}
+ul{
+    list-style: none;
+}
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+.contact-us{
+    margin-top: -100px;
+}
+.contact-us h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.contact-us h4 {
+  color: #5542ff;
+  margin-bottom: 20px;
+}
+
+.contact-us ul {
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.contact-us ul li {
+  margin-bottom: 10px;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-us form input:focus,
+.contact-us form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-us .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.contact-us .btn-primary:hover {
+  background-color: #0056b3;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+  }
+  .text-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+    z-index: 1;
+    text-align: center;
+    padding: 105px;
+    color: white;
+  }
+.text-overlay h1 {
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+  }
+.text-overlay p{
+    font-size: 20px;
+}
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-fade {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+.carousel-fade img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    animation: fade 12s infinite;
+  }
+.carousel-fade img:nth-child(1) {
+    animation-delay: 0s;
+  }
+.carousel-fade img:nth-child(2) {
+    animation-delay: 4s;
+  }
+.carousel-fade img:nth-child(3) {
+    animation-delay: 8s;
+  }
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    33% {
+      opacity: 1;
+    }
+    66% {
+      opacity: 0;
+    }
+  }
